@@ -1,0 +1,5 @@
+{
+  "name": "Planejador de Tarefas TDAH",
+  "description": "Uma aplicação web para visualizar um kit de ferramentas de limpeza e organização projetado para pessoas com TDAH, com listas de verificação e planejadores para ajudar a gerenciar tarefas domésticas.",
+  "requestFramePermissions": []
+}
