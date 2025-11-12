@@ -4,13 +4,14 @@ import { Header } from './components/Header';
 import { ProductGallery } from './components/ProductGallery';
 import { ProductInfo } from './components/ProductInfo';
 import { ProductDescription } from './components/ProductDescription';
+import { OrderStatusTracker } from './components/OrderStatusTracker';
 import { Footer } from './components/Footer';
 import { ProductData } from './types';
 
 const productData: ProductData = {
   title: '⏰ Kit de Ferramentas de Limpeza e Organização para TDAH - Planejador de Tarefas ✔',
-  price: 19.99,
-  regularPrice: 38.99,
+  price: 47.00,
+  regularPrice: 99.00,
   gallery: [
     { id: 1, url: 'https://cdn.hotishop.com/image/650ca22630e437e529090612656fed4afa4f1914.jpeg' },
     { id: 2, url: 'https://cdn.hotishop.com/image/e86d4a2ab9b52bbeb9b86849afb9404f3f87b467.jpeg' },
@@ -38,6 +39,7 @@ const App: React.FC = () => {
             </div>
           </div>
           <ProductDescription />
+          <OrderStatusTracker />
         </div>
       </main>
       <Footer />

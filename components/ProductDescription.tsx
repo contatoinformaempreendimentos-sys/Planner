@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const FeatureSection: React.FC<{ title: string; children: React.ReactNode; image?: string }> = ({ title, children, image }) => (
@@ -94,10 +93,11 @@ export const ProductDescription: React.FC = () => {
                   <hr/>
 
                   <h3 className='font-bold mt-4'>NOSSA GARANTIA</h3>
-                  <p>📦 Envio Mundial Segurado: Cada pedido inclui detalhes de rastreamento em tempo real e cobertura de seguro no caso improvável de um pacote ser perdido ou roubado em trânsito.</p>
-                  <p>✉️ Suporte ao Cliente 24/7: Temos uma equipe de representantes ao vivo prontos para ajudar e responder a quaisquer perguntas que você tenha dentro de um prazo de 24 horas, 7 dias por semana.</p>
-                  <p>🔒 Checkouts Seguros e Protegidos: Usamos criptografia SSL Secure de última geração para manter suas informações pessoais e financeiras 100% protegidas.</p>
-                  <p>🔒 Compra 100% Sem Riscos: Se você comprou e sentiu que não é para você, não se preocupe. Basta clicar no botão Contate-nos e nos enviar uma mensagem, e nós resolveremos oferecendo uma substituição ou reembolso. Processo 100% Simples e Sem Riscos.</p>
+                  <p>📩 Acesso Digital Imediato: Você receberá o produto adquirido imediatamente após a compra, nada de esperas.</p>
+                  <p>💬 Suporte ao Cliente 24/7: Nossa equipe está sempre pronta para ajudar, respondemos todas as mensagens em até 24 horas, todos os dias da semana.</p>
+                  <p>🔒 Pagamento 100% Seguro: Utilizamos criptografia SSL Secure de última geração para proteger suas informações pessoais e financeiras durante toda a compra.</p>
+                  <p>✅ Compra Sem Riscos: Se o produto não for o que você esperava, entre em contato conosco, oferecemos reembolso garantido dentro de 7 dias. Processo simples, rápido, totalmente seguro e sem perguntas.</p>
+                  <img src="https://i.ibb.co/tBSg2L4/garantia-7-dias.png" alt="Garantia de 7 dias" className="mx-auto my-6 w-40 h-40" />
                 </div>
             </div>
         </div>

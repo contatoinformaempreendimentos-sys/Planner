@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const MenuIcon: React.FC = () => (
@@ -25,9 +24,9 @@ const CartIcon: React.FC = () => (
     </svg>
 );
 
-const NavItem: React.FC<{ children: React.ReactNode; href?: string }> = ({ children, href = '#' }) => (
+const NavItem: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <li className="h-full">
-    <a href={href} className="text-sm uppercase text-gray-700 hover:text-green-700 h-full flex items-center border-b-2 border-transparent hover:border-green-600 transition-colors duration-300 mx-4">
+    <a href="#" onClick={(e) => e.preventDefault()} className="cursor-pointer text-sm uppercase text-gray-700 hover:text-green-700 h-full flex items-center border-b-2 border-transparent hover:border-green-600 transition-colors duration-300 mx-4">
       {children}
     </a>
   </li>
@@ -37,7 +36,7 @@ export const Header: React.FC = () => {
   return (
     <header className="shadow-sm bg-white sticky top-0 z-50">
       <div className="bg-cover bg-center text-white text-center py-2 px-4" style={{ backgroundImage: "url('https://cdn.hotishop.com/image/fb81a7dffaa909d8c43f18d85514c128750c797a.png')"}}>
-        <p className="text-sm font-semibold">🎉 Frete Grátis em Pedidos Acima de $39 🎉</p>
+        <p className="text-sm font-semibold">🎉Oferta Exclusiva — Acesso Instantâneo e Vitalício Após a Compra! 🎉</p>
       </div>
       <div className="container mx-auto px-4 lg:px-6">
         <div className="flex justify-between items-center h-20">
@@ -47,19 +46,18 @@ export const Header: React.FC = () => {
             </button>
           </div>
           <div className="flex-1 lg:flex-none flex justify-center lg:justify-start">
-             <a href="/" className="flex items-center">
+             <a href="#" onClick={(e) => e.preventDefault()} className="flex items-center cursor-pointer">
               <img src="https://cdn.hotishop.com/image/07d43ff0bebb3ebf114c31ce7ac20077180f94c9.png" alt="EXPANLARGE" className="h-8 w-auto" />
             </a>
           </div>
           <nav className="hidden lg:flex justify-center flex-1 h-full">
             <ul className="flex items-center h-full">
-              <NavItem href="/">HOME</NavItem>
-              <NavItem href="/collections/all-products">TODOS OS PRODUTOS</NavItem>
-              <NavItem href="/collections/christmas-decorations">DECORAÇÕES DE NATAL</NavItem>
-              <NavItem href="/collections/christmas-gifts">PRESENTES DE NATAL</NavItem>
-              <NavItem href="/collections/christmas-lights">LUZES DE NATAL</NavItem>
-              <NavItem href="/collections/christmas-toys">BRINQUEDOS DE NATAL</NavItem>
-              <NavItem href="/app/order-tracking">RASTREAR SEU PEDIDO</NavItem>
+              <NavItem>HOME</NavItem>
+              <NavItem>TODOS OS PRODUTOS</NavItem>
+              <NavItem>DECORAÇÕES DE NATAL</NavItem>
+              <NavItem>PRESENTES DE NATAL</NavItem>
+              <NavItem>LUZES DE NATAL</NavItem>
+              <NavItem>BRINQUEDOS DE NATAL</NavItem>
             </ul>
           </nav>
           <div className="flex items-center space-x-4">

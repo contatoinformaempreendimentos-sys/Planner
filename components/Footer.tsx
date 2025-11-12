@@ -1,9 +1,8 @@
-
 import React from 'react';
 
-const FooterLink: React.FC<{ href: string; children: React.ReactNode }> = ({ href, children }) => (
+const FooterLink: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <li>
-    <a href={href} className="text-gray-600 hover:text-green-700 hover:underline transition-colors text-sm">
+    <a href="#" onClick={(e) => e.preventDefault()} className="text-gray-600 hover:text-green-700 hover:underline transition-colors text-sm cursor-pointer">
       {children}
     </a>
   </li>
@@ -18,27 +17,26 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold text-gray-800 uppercase mb-4">SOBRE</h4>
             <ul className="space-y-2">
-              <FooterLink href="/pages/about-us-2-2-2">SOBRE NÓS</FooterLink>
-              <FooterLink href="/pages/contact-us-2-2-2">CONTATE-NOS</FooterLink>
-              <FooterLink href="/pages/faqs-2-2-2">PERGUNTAS FREQUENTES</FooterLink>
-              <FooterLink href="https://www.expanlarge.com/app/order-tracking">RASTREAR SEU PEDIDO</FooterLink>
+              <FooterLink>SOBRE NÓS</FooterLink>
+              <FooterLink>CONTATE-NOS</FooterLink>
+              <FooterLink>PERGUNTAS FREQUENTES</FooterLink>
             </ul>
           </div>
           
           <div>
             <h4 className="font-bold text-gray-800 uppercase mb-4">POLÍTICA</h4>
             <ul className="space-y-2">
-              <FooterLink href="/pages/privacy-policy-2-2-2">POLÍTICA DE PRIVACIDADE</FooterLink>
-              <FooterLink href="/pages/return-policy-2-2-2">POLÍTICA DE DEVOLUÇÃO</FooterLink>
-              <FooterLink href="/pages/shipping-information-2-2-2">INFORMAÇÕES DE ENVIO</FooterLink>
-              <FooterLink href="/pages/terms-of-service-2-2-2">TERMOS DE SERVIÇO</FooterLink>
+              <FooterLink>POLÍTICA DE PRIVACIDADE</FooterLink>
+              <FooterLink>POLÍTICA DE DEVOLUÇÃO</FooterLink>
+              <FooterLink>INFORMAÇÕES DE ENVIO</FooterLink>
+              <FooterLink>TERMOS DE SERVIÇO</FooterLink>
             </ul>
           </div>
 
           <div>
             <h4 className="font-bold text-gray-800 uppercase mb-4">Bem-vindo(a) para assinar nosso e-mail.</h4>
             <p className="text-sm text-gray-600 mb-4">Por favor, nos informe se tiver alguma dúvida, nós resolveremos para você a tempo.</p>
-            <form>
+            <form onSubmit={(e) => e.preventDefault()}>
               <div className="flex">
                 <input 
                   type="email" 
